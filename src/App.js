@@ -2,8 +2,7 @@ import './App.css';
 import {
   BrowserRouter,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import Home from "./components/Home";
@@ -17,6 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/my-bio" element={<Home/>} />
           <Route path="tick-tac-toe" element={<TicTacToe/>} />
         </Routes>
       </div>
